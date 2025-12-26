@@ -33,7 +33,7 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - HoleESP  
 - FullBright  
 - NoRender  
-
+... and more!
 ---
 
 ### 🏝️ Donut SMP
@@ -44,7 +44,8 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - RTPBaseFinder  
 - SpawnerProtect  
 - FakeScore  
-- HideScore  
+- HideScore
+... and more!
 
 ---
 
@@ -55,7 +56,8 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - FastUse  
 - NameProtect  
 - SkinChanger  
-- TabDetector  
+- TabDetector
+and more!
 
 ---
 
@@ -65,7 +67,8 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - HUD Editor  
 - Friends System  
 - Discord RPC  
-- Webhook Utilities  
+- Webhook Utilities 
+and more!
 
 ---
 

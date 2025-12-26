@@ -22,8 +22,9 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - AutoTotem  
 - AutoDoubleHand  
 - CrystalMacro  
-- MaceTriggerBot  
+- MaceTriggerBot
 
+  ... and more!
 ---
 
 ### 👁️ Visual
@@ -32,8 +33,9 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - CrystalESP  
 - HoleESP  
 - FullBright  
-- NoRender  
-... and more!
+- NoRender
+
+  ... and more!
 ---
 
 ### 🏝️ Donut SMP
@@ -45,7 +47,8 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - SpawnerProtect  
 - FakeScore  
 - HideScore
-... and more!
+
+  ... and more!
 
 ---
 
@@ -57,7 +60,8 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 - NameProtect  
 - SkinChanger  
 - TabDetector
-and more!
+
+  ... and more!
 
 ---
 
@@ -68,7 +72,8 @@ and more!
 - Friends System  
 - Discord RPC  
 - Webhook Utilities 
-and more!
+
+  ... and more!
 
 ---
 

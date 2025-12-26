@@ -7,6 +7,14 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 
 ---
 
+## 🖼️ Menu Preview
+
+<p align="center">
+  <img src="preview.png" alt="Radium Client Menu Preview" width="800">
+</p>
+
+---
+
 ## 📦 Features
 
 ### ⚔️ Combat
@@ -102,12 +110,29 @@ Optimized for **Minecraft 1.21 – 1.21.11**, with strong support for **DonutSMP
 4. Add **Radium Client** to your mods list  
 5. Launch the game  
 
-Feather Client handles Fabric and mod loading automatically, making setup faster and easier.
-
 ---
 
 ## 🎮 Usage
 
-- Open the in-game GUI keybind is Right-Shift  
+- Open the in-game GUI using **Right Shift**  
+- Toggle modules and adjust settings  
+- Save and load configs  
 
 ---
+
+## 📄 License
+
+Licensed under the **MIT License**.  
+See the `LICENSE` file for more information.
+
+---
+
+## 💬 Support
+
+🌐 Website: https://radiumclient.net  
+🐞 Issues: GitHub Issues tab  
+
+---
+
+> ⚠️ This client is intended for educational and experimental use.  
+> Always follow server rules and terms of service.

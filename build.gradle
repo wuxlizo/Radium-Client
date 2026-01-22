@@ -1,0 +1,74 @@
+plugins {
+    id "fabric-loom" version "1.8.9"
+}
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+group = project.maven_group
+
+repositories {
+    maven { name = "Fabric"; url = "https://maven.fabricmc.net/" }
+    maven { name = "Sponge"; url = "https://repo.spongepowered.org/repository/maven-public/" }
+    maven { name = "minecraft-repo"; url = "https://libraries.minecraft.net/" }
+    maven { url = "https://jitpack.io" }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    implementation "com.mojang:authlib:6.0.57"
+    implementation "com.google.code.gson:gson:2.11.0"
+
+    include(implementation('com.jagrosh:DiscordIPC:0.4'))
+    include(implementation('org.json:json:20240303'))
+    include(implementation('com.github.LabyStudio:java-spotify-api:1.4.7'))
+}
+
+loom {
+    mixin {
+        defaultRefmapName = "radium.refmap.json"
+    }
+    runs {
+        client {
+            defaultMainClass = "net.fabricmc.devlaunchinjector.Main"
+        }
+    }
+}
+
+// Ensure all tasks use Java 21
+tasks.withType(JavaExec).configureEach {
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+processResources {
+    filesMatching("fabric.mod.json") {
+        expand(
+                version: project.version,
+                loader_version: project.loader_version,
+                minecraft_version: project.minecraft_version
+        )
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+}
+
+task copyDependencies(type: Copy) {
+    from configurations.runtimeClasspath
+    into 'libs'
+}

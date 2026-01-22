@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="imagepng.png" alt="Radium Client Preview" width="800">
+  <img src="image.png" alt="Radium Client" width="800">
 </p>
 
 # Radium v3 leak
